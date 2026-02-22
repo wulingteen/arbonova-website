@@ -10,7 +10,6 @@ class ParticleNetwork {
   private ctx!: CanvasRenderingContext2D;
   private particles: Particle[] = [];
   private mouse = { x: 0, y: 0 };
-  private animationId = 0;
 
   constructor(canvasId: string) {
     this.canvas = document.getElementById(canvasId) as HTMLCanvasElement;
@@ -87,7 +86,7 @@ class ParticleNetwork {
       }
     });
 
-    this.animationId = requestAnimationFrame(this.animate);
+    requestAnimationFrame(this.animate);
   };
 }
 
@@ -129,7 +128,7 @@ class Particle {
 function initScrollAnimations() {
   const observer = new IntersectionObserver(
     (entries) => {
-      entries.forEach((entry, index) => {
+      entries.forEach((entry, _index) => {
         if (entry.isIntersecting) {
           // Stagger animation for sibling elements
           const el = entry.target as HTMLElement;
