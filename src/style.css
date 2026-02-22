@@ -1574,3 +1574,21 @@ textarea {
   transform: translateY(8px);
   transition: opacity 1.2s cubic-bezier(0.16, 1, 0.3, 1) 0.15s, transform 1.2s cubic-bezier(0.16, 1, 0.3, 1) 0.15s;
 }
+/* --- Newly Added Brand Assets Styles --- */
+.splash-logo-img {
+  max-width: 300px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.nav-logo-img {
+  height: 48px;
+  width: auto;
+  display: block;
+}
+
+.pmi-logo-img {
+  height: 40px;
+  width: auto;
+  margin-bottom: 0.5rem;
+}
