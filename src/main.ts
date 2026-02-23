@@ -441,7 +441,7 @@ const translations: Record<string, Record<string, string>> = {
     "jenny.hero.subtitle": "Your 24/7 Automated Recruitment Ally",
     "jenny.hero.btn.demo": "Book a Demo",
     "jenny.hero.btn.features": "Explore Features",
-    "jenny.statement.text": "Is this the daily challenge your team faces?<br /><span>A consultant's time should be spent on \"building human connections\" and \"closing deals\", not endless resume screening, paperwork, and progress tracking.</span>",
+    "jenny.statement.text": "Top recruiters shouldn't waste time on endless profile screening and email follow-ups.<br /><span>Let Jenny handle candidate discovery, cold outreach, and pipeline tracking—so you can focus on what matters most: building human connections and closing the perfect match.</span>",
 
     // Jenny Page - Core Features
     "jenny.bento.header.title": "Jenny's 4 Core Capabilities",
