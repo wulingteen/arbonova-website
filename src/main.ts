@@ -426,6 +426,10 @@ const translations: Record<string, Record<string, string>> = {
     "home.hero.stat2.label": "AI Agents Deployed",
     "home.hero.stat3.label": "Client Satisfaction",
 
+    // Home - Jenny Banner
+    "home.banner.title": "Let top recruiters focus on \"closing\", leave the tedious outreach to AI.<br /><span class=\"gradient-text\">Meet Jenny</span> —— Your 24/7 Multi-Agent recruitment ally.",
+    "home.banner.btn": "<span>See How Jenny Doubles Interview Rates</span> <svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\"><path d=\"M5 12h14M12 5l7 7-7 7\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>",
+
     // Jenny Page - Hero & Stats
     "jenny.hero.eyebrow": "Exclusive for Recruiters • AI Agent Team",
     "jenny.hero.title": "Jenny",
