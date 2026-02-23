@@ -59,12 +59,11 @@
     "taxID": "60351551"
   }
   </script>
-  <script type="module" crossorigin src="/arbonova-website/assets/main-DDKzq41D.js"></script>
+  <script type="module" crossorigin src="/arbonova-website/assets/main-D_KpNBTG.js"></script>
   <link rel="stylesheet" crossorigin href="/arbonova-website/assets/main-OlT2I5AK.css">
-  <link rel="stylesheet" crossorigin href="/arbonova-website/assets/jenny-CAz6ZxrT.css">
 </head>
 
-<body class="jenny-page">
+<body>
 
   <!-- ========== NAVIGATION ========== -->
   <nav class="navbar" id="navbar">
@@ -87,88 +86,124 @@
     </div>
   </nav>
 
-  <!-- ========== NEW JENNY HERO ========== -->
-  <section class="jenny-hero" id="pain-points">
-    <div class="hero-bg-glow"></div>
-    <div class="jenny-hero-content animate-on-scroll">
-      <div class="jenny-hero-eyebrow" data-i18n="jenny.hero.eyebrow">獵頭專用 • AI Agent 團隊</div>
-      <h1 class="jenny-hero-title" data-i18n="jenny.hero.title">Jenny</h1>
-      <p class="jenny-hero-subtitle" data-i18n="jenny.hero.subtitle">
+  <!-- ========== JENNY HERO ========== -->
+  <section class="hero" id="pain-points">
+    <canvas id="particleCanvas" class="hero-canvas"></canvas>
+    <div class="hero-content">
+      <div class="hero-badge animate-on-scroll" data-i18n="jenny.hero.eyebrow">
+        <span class="badge-dot"></span> 獵頭專用 • AI Agent 團隊
+      </div>
+      <h1 class="hero-title animate-on-scroll" data-i18n="jenny.hero.title">
+        Jenny
+      </h1>
+      <p class="hero-subtitle animate-on-scroll" data-i18n="jenny.hero.subtitle">
         您的全天候自動化招募戰友
       </p>
-      <div class="jenny-hero-cta">
-        <a href="#contact" class="jenny-btn-primary" data-i18n="jenny.hero.btn.demo">立即預約展示</a>
-        <a href="#core-features" class="jenny-btn-secondary" data-i18n="jenny.hero.btn.features">深入了解功能</a>
+      <div class="hero-actions animate-on-scroll">
+        <a href="#contact" class="btn btn-primary" data-i18n="jenny.hero.btn.demo">
+          <span>立即預約展示</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.8">
+            <path d="M4 12h16m-6-6 l6 6-6 6" />
+          </svg>
+        </a>
+        <a href="#core-features" class="btn btn-outline" data-i18n="jenny.hero.btn.features">深入了解功能</a>
       </div>
     </div>
   </section>
 
   <!-- ========== BIG STATEMENT (THE PROBLEM) ========== -->
-  <section class="jenny-statement" id="solution">
-    <div class="jenny-statement-text animate-on-scroll" data-i18n="jenny.statement.text">
-      這是不是您團隊每天面臨的挑戰？<br />
-      <span>顧問的時間，應該花在「建立人際連結」與「促成交易」，而不是無止盡的條件比對、文書溝通與進度追蹤。</span>
+  <section class="section about" id="solution" style="text-align: center;">
+    <div class="container">
+      <div class="section-header animate-on-scroll" style="max-width: 900px; margin: 0 auto;">
+        <h2 class="section-title" data-i18n="jenny.statement.text"
+          style="font-size: clamp(1.8rem, 4vw, 2.5rem); line-height: 1.4; color: var(--text-primary);">
+          這是不是您團隊每天面臨的挑戰？<br />
+          <span style="color: var(--text-secondary);">顧問的時間，應該花在「建立人際連結」與「促成交易」，而不是無止盡的條件比對、文書溝通與進度追蹤。</span>
+        </h2>
+      </div>
     </div>
   </section>
 
   <!-- ========== BENTO BOX (CORE FEATURES) ========== -->
-  <section class="jenny-bento-section" id="core-features">
-    <div class="jenny-bento-header animate-on-scroll">
-      <h2 data-i18n="jenny.bento.header.title">Jenny 的四大核心賦能</h2>
-      <p style="color: #86868b; font-size: 1.5rem; font-weight: 500;" data-i18n="jenny.bento.header.subtitle">打造高效招募引擎
-        (HR Efficiency)</p>
-    </div>
-
-    <div class="jenny-bento-grid">
-
-      <!-- Bento 1: Large (Solution Intro) -->
-      <div class="bento-card bento-large bento-purple animate-on-scroll">
-        <div class="bento-content">
-          <div class="bento-icon">🤖</div>
-          <h3 class="bento-title" data-i18n="jenny.bento.f1.title">全球首創<br />Multi-Agent 助理</h3>
-          <p class="bento-desc" data-i18n="jenny.bento.f1.desc">為了徹底釋放生產力，ArboNova™ 攜手業界頂尖夥伴，共同研發了 Jenny。她具備三大獨立大腦：深度理解
-            JD、精挑合適履歷，並自動撰寫高回覆率的破冰開發信。</p>
-        </div>
-        <div class="bento-visual">🧠</div>
+  <section class="section features" id="core-features">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-tag" data-i18n="jenny.bento.header.subtitle">打造高效招募引擎 (HR Efficiency)</span>
+        <h2 class="section-title" data-i18n="jenny.bento.header.title">Jenny 的四大核心賦能</h2>
       </div>
 
-      <!-- Bento 2: Standard -->
-      <div class="bento-card bento-gold animate-on-scroll">
-        <div class="bento-content">
-          <div class="bento-icon">⚡</div>
-          <h3 class="bento-title" data-i18n="jenny.bento.f2.title">零時差的自動聯繫</h3>
-          <p class="bento-desc" data-i18n="jenny.bento.f2.desc">從初步接觸到後續回信全自動完成。自動生成專屬破冰信件並發送，大幅提升開信率與回覆率。</p>
-        </div>
-      </div>
+      <div class="features-grid">
 
-      <!-- Bento 3: Standard -->
-      <div class="bento-card bento-green animate-on-scroll">
-        <div class="bento-content">
-          <div class="bento-icon">🎯</div>
-          <h3 class="bento-title" data-i18n="jenny.bento.f3.title">深度語意精準匹配</h3>
-          <p class="bento-desc" data-i18n="jenny.bento.f3.desc">超越傳統關鍵字搜尋，精準洞察 JD 與履歷間的「隱性適配度」，為您挖掘最符合企業文化的黑馬。</p>
+        <!-- Feature 1 -->
+        <div class="feature-card feature-card--dark animate-on-scroll">
+          <div class="feature-card-num">01</div>
+          <div class="feature-icon icon-purple">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.8">
+              <path d="M12 2A10 10 0 0 0 12 22A10 10 0 0 0 12 2" />
+              <path d="M12 2A4 10 0 0 0 12 22A4 10 0 0 0 12 2" />
+              <path d="M2 12A10 4 0 0 0 22 12A10 4 0 0 0 2 12" />
+            </svg>
+          </div>
+          <h3 class="feature-title" data-i18n="jenny.bento.f1.title">全球首創<br />Multi-Agent 助理</h3>
+          <p class="feature-desc" data-i18n="jenny.bento.f1.desc">為了徹底釋放生產力，ArboNova™ 攜手業界頂尖夥伴，共同研發了
+            Jenny。她具備三大獨立大腦：深度理解 JD、精挑合適履歷，並自動撰寫高回覆率的破冰開發信。</p>
         </div>
-      </div>
 
-      <!-- Bento 4: Large (Process Tracking) -->
-      <div class="bento-card bento-large bento-purple animate-on-scroll" style="align-items: flex-end;">
-        <div class="bento-visual" style="left: -20px; bottom: 0; right: auto; font-size: 250px;">📊</div>
-        <div class="bento-content">
-          <div class="bento-icon">🏆</div>
-          <h3 class="bento-title" data-i18n="jenny.bento.f4.title">全自動流程追蹤<br />實戰面試驗證</h3>
-          <p class="bento-desc" data-i18n="jenny.bento.f4.desc">自動追蹤候選人回覆與意願並系統化分類，結合獨家 RAG
+        <!-- Feature 2 -->
+        <div class="feature-card feature-card--gold animate-on-scroll">
+          <div class="feature-card-num">02</div>
+          <div class="feature-icon icon-blue">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.8">
+              <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+            </svg>
+          </div>
+          <h3 class="feature-title" data-i18n="jenny.bento.f2.title">零時差的自動聯繫</h3>
+          <p class="feature-desc" data-i18n="jenny.bento.f2.desc">從初步接觸到後續回信全自動完成。自動生成專屬破冰信件並發送，大幅提升開信率與回覆率。</p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="feature-card feature-card--green animate-on-scroll">
+          <div class="feature-card-num">03</div>
+          <div class="feature-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.8">
+              <circle cx="12" cy="12" r="10" />
+              <circle cx="12" cy="12" r="6" />
+              <circle cx="12" cy="12" r="2" />
+            </svg>
+          </div>
+          <h3 class="feature-title" data-i18n="jenny.bento.f3.title">深度語意精準匹配</h3>
+          <p class="feature-desc" data-i18n="jenny.bento.f3.desc">超越傳統關鍵字搜尋，精準洞察 JD 與履歷間的「隱性適配度」，為您挖掘最符合企業文化的黑馬。</p>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="feature-card feature-card--accent animate-on-scroll">
+          <div class="feature-card-num">04</div>
+          <div class="feature-icon icon-gold">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.8">
+              <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+              <path d="M3 9h18 M9 21V9" />
+            </svg>
+          </div>
+          <h3 class="feature-title" data-i18n="jenny.bento.f4.title">全自動流程追蹤<br />實戰面試驗證</h3>
+          <p class="feature-desc" data-i18n="jenny.bento.f4.desc">自動追蹤候選人回覆與意願並系統化分類，結合獨家 RAG
             實戰資料庫，實質提高人選推薦命中率。獵頭顧問只需在最關鍵時刻介入成交環節。</p>
         </div>
-      </div>
 
+      </div>
     </div>
   </section>
 
   <!-- ========== BIG CALLOUT ========== -->
-  <section class="jenny-statement" style="background-color: var(--accent-primary); padding: 100px 20px;">
-    <div class="jenny-statement-text animate-on-scroll"
-      style="color: var(--text-primary); text-shadow: 2px 2px 0 white;" data-i18n="jenny.callout.text">
-      迎戰 AI 時代，<br /><span style="color: white; text-shadow: none;">讓科技放大您的人性價值。</span>
+  <section class="section about"
+    style="text-align: center; background-color: var(--bg-primary); border-top: 1px solid rgba(26,26,26,0.05);">
+    <div class="container">
+      <div class="section-header animate-on-scroll" style="max-width: 900px; margin: 0 auto;">
+        <h2 class="section-title" data-i18n="jenny.callout.text"
+          style="font-size: clamp(2rem, 5vw, 3rem); line-height: 1.4; color: var(--text-primary);">
+          迎戰 AI 時代，<br />
+          <span class="gradient-text">讓科技放大您的人性價值。</span>
+        </h2>
+      </div>
     </div>
   </section>
 
