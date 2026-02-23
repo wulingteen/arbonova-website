@@ -430,31 +430,46 @@ const translations: Record<string, Record<string, string>> = {
     "home.hero.stat1.label": "Enterprise Clients",
     "home.hero.stat2.label": "AI Agents Deployed",
     "home.hero.stat3.label": "Client Satisfaction",
+    "nav.products": "Products",
 
-    // Home - Jenny Banner
-    "home.banner.title": "Let top recruiters focus on \"closing\", leave the tedious outreach to AI.<br /><span class=\"gradient-text\">Meet Jenny</span> —— Your 24/7 Multi-Agent recruitment ally.",
-    "home.banner.btn": "<span>See How Jenny Doubles Interview Rates</span> <svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\"><path d=\"M5 12h14M12 5l7 7-7 7\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>",
+    // Home - Banner
+    "home.banner.title": "Let top recruiters focus on \"closing deals,\" and leave the tedious outreach to AI.<br /><span class=\"gradient-text\">Meet Serena</span> — Your 24/7 Multi-Agent Recruitment Ally.",
+    "home.banner.btn": "See How Serena Doubles Interview Rates",
 
-    // Jenny Page - Hero & Stats
-    "jenny.hero.eyebrow": "Exclusive for Recruiters • AI Agent Team",
-    "jenny.hero.title": "Jenny",
-    "jenny.hero.subtitle": "Your 24/7 Automated Recruitment Ally",
-    "jenny.hero.btn.demo": "Book a Demo",
-    "jenny.hero.btn.features": "Explore Features",
-    "jenny.statement.text": "Top recruiters shouldn't waste time on endless profile screening and email follow-ups.<br /><span>Let Jenny handle candidate discovery, cold outreach, and pipeline tracking—so you can focus on what matters most: building human connections and closing the perfect match.</span>",
+    // ====== SERENA PAGE =======
+    // Serena Page - Hero & Statement
+    "serena.hero.eyebrow": "Let top recruiters focus on closing; leave outreach to AI",
+    "serena.hero.title": "ArboNova™ Headhunter AI Agent:<br/><span class=\"gradient-text\">Serena</span>",
+    "serena.hero.subtitle": "Your 24/7 Automated Recruitment Ally",
+    "serena.hero.btn.demo": "Book a Demo",
+    "serena.hero.btn.features": "Explore Features",
 
-    // Jenny Page - Core Features
-    "jenny.bento.header.title": "Jenny's 4 Core Capabilities",
-    "jenny.bento.header.subtitle": "Building a High-Efficiency Recruitment Engine (HR Efficiency)",
-    "jenny.bento.f1.title": "World's First<br />Multi-Agent Assistant",
-    "jenny.bento.f1.desc": "To completely unleash productivity, ArboNova™ partnered with top industry experts to develop Jenny. She possesses three independent brains: deeply understanding the JD, hand-picking suitable resumes, and automatically writing high-response cold outreach emails.",
-    "jenny.bento.f2.title": "Zero-Delay Automated Outreach",
-    "jenny.bento.f2.desc": "From initial contact to follow-up emails, everything is fully automated. She generates and sends personalized icebreaker emails, dramatically increasing open and reply rates.",
-    "jenny.bento.f3.title": "Deep Semantic Matching",
-    "jenny.bento.f3.desc": "Going beyond traditional keyword searches to accurately uncover the \"hidden fit\" between the JD and resumes, digging up the dark horses that best match your corporate culture.",
-    "jenny.bento.f4.title": "Automated Process Tracking<br />& Interview Validation",
-    "jenny.bento.f4.desc": "Automatically tracks candidate responses and intentions, classifying them systematically. Combined with our exclusive RAG candidate database, it substantially improves the accuracy of personnel recommendations. Recruiters only need to step in at the most critical closing stage.",
-    "jenny.callout.text": "In the Age of AI,<br /><span style=\"color: white; text-shadow: none;\">Let tech amplify your human value.</span>",
+    "serena.painpoints.tag": "Pain Points",
+    "serena.painpoints.title": "Is this the daily challenge your team faces?",
+    "serena.painpoints.desc": "<p>As a top recruiter, Bruce's calendar is always full of in-depth interviews with high-level candidates. However, outside of these meetings, he still spends a massive amount of time and energy on:</p><ul style=\"margin: 20px 0 20px 40px; list-style-type: disc;\"><li><strong>Endless Profile Screening:</strong> Validating thousands of resumes line-by-line against JD requirements.</li><li><strong>Tedious Cold Outreach:</strong> Drafting and tweaking countless personalized cold emails.</li><li><strong>Time-Consuming Pipeline Tracking:</strong> Waiting for candidate replies and manually tracking engagement.</li></ul><p><strong>A consultant's time should be spent on \"building human connections\" and \"closing deals\", not administrative work.<br/>This is precisely the industry pain point ArboNova™ aims to solve.</strong></p>",
+
+    // Serena Page - Core Features
+    "serena.solution.tag": "Solution",
+    "serena.solution.title": "Meet Serena: The World's First Multi-Agent AI for Headhunters",
+    "serena.solution.desc": "<p>To completely unleash recruiter productivity, ArboNova™ partnered with top industry leaders to develop a Hunter-specific AI Agent — Serena.</p><p style=\"margin-top: 15px;\">Serena features three core capabilities powered by multiple collaborative AI brains:</p><ul style=\"margin: 15px 0 0 0; list-style: none; display: flex; flex-direction: column; gap: 15px;\"><li>🔍 <strong>Deep Analysis:</strong> Dedicated to reading and deeply understanding core JD requirements.</li><li>🎯 <strong>Precision Sourcing:</strong> Accurately scanning and filtering the best-fit resumes from a sea of candidates.</li><li>💬 <strong>Targeted Outreach:</strong> Automatically drafting personalized, high-response outreach emails based on candidate backgrounds.</li></ul>",
+    
+    "serena.bento.tag": "Building a High-Efficiency Recruitment Engine (HR Efficiency)",
+    "serena.bento.title": "Serena's 4 Core Capabilities",
+
+    "serena.f1.title": "Zero-Delay Automated Outreach",
+    "serena.f1.desc": "From initial contact to follow-up replies, AI handles it fully automatically. Serena creates personalized icebreaker emails based on a candidate's specific background highlights, drastically improving open and response rates.",
+
+    "serena.f2.title": "Deep Semantic Precision Matching",
+    "serena.f2.desc": "Beyond traditional keyword search, Serena utilizes deep analysis to uncover the \"hidden fit\" between a JD and a candidate's resume, discovering the perfect dark-horse talent for your corporate culture.",
+
+    "serena.f3.title": "Fully Automated Process Tracking",
+    "serena.f3.desc": "Stop staring at your inbox. Serena automatically tracks candidate replies and intentions, categorizing them systematically. Recruiters only step in at the most critical moment: focusing on the final interview and closing.",
+
+    "serena.f4.title": "Proven Success in Interview Rates",
+    "serena.f4.desc": "Our AI isn't just theoretical. Serena draws from ArboNova's exclusive proprietary RAG database built from real-world enterprise interviews, combined with authentic feedback from hiring managers. Through live testing, we provably help partners increase talent hit rates and successful interview conversions.",
+
+    "serena.callout.tag": "Embrace the AI Era, Let Technology Amplify Your Human Value",
+    "serena.callout.title": "In the fiercely competitive talent market, ArboNova™ frees top headhunters from tedious, low-efficiency outreach.<br /><span class=\"gradient-text\">Let AI handle data and processes, so you can focus on your irreplaceable \"eye for talent\" and \"negotiation charm.\"</span><br/><span style=\"font-size: 1.5rem; display: block; margin-top: 30px;\">Ready to double your recruitment team's efficiency?</span>",
 
     // Home - Use Cases
     "home.features.tag": "Core Capabilities",
@@ -522,11 +537,9 @@ const translations: Record<string, Record<string, string>> = {
     "home.contact.form.phone": "Contact Number *",
     "home.contact.form.interest": "Interested Application Scenarios *",
     "home.contact.form.opt1": "Please Select...",
-    "home.contact.form.opt2": "Jenny (HR/Recruitment Agent)",
-    "home.contact.form.opt3": "Intelligent Customer Service",
-    "home.contact.form.opt4": "Precision Marketing / Lead Generation",
-    "home.contact.form.opt5": "Internal Data Analytics / Process Automation",
-    "home.contact.form.opt6": "Other (Please describe below)",
+    "home.contact.form.opt2": "Resume screening is too slow",
+    "home.contact.form.opt3": "Low cold email response rate",
+    "home.contact.form.opt4": "Process is hard to track",
     "home.contact.form.message": "Current Pain Points or Goals (Optional)",
     "home.contact.form.submit": "Submit Request",
     "home.footer.rights": "© 2024 ArboNova™ Technology. All rights reserved."

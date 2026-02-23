@@ -9,7 +9,7 @@ export default defineConfig({
       rollupOptions: {
         input: {
           main: resolve(__dirname, 'index.html'),
-          jenny: resolve(__dirname, 'jenny.html')
+          serena: resolve(__dirname, 'serena.html')
         }
       }
     }
