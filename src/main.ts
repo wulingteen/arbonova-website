@@ -461,6 +461,8 @@ const translations: Record<string, Record<string, string>> = {
     "home.features.f2.desc": "Fully automate repetitive workflows, from data collection and analysis to report generation, drastically reducing labor costs.",
     "home.features.f3.title": "Real-time Learning",
     "home.features.f3.desc": "Agents continuously learn and evolve based on interaction feedback, constantly optimizing decision quality.",
+    "home.features.f4.title": "Security & Compliance",
+    "home.features.f4.desc": "Enterprise-grade security, data encryption, and access control, compliant with ISO 27001 standards to protect your trade secrets.",
     // Home - How It Works
     "home.works.tag": "How It Works",
     "home.works.title": "Launch Your AI Team<br /><span class=\"gradient-text\">in 3 Steps</span>",
