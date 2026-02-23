@@ -410,12 +410,6 @@ const translations: Record<string, Record<string, string>> = {
     "nav.jennyLink": "AI Agent (Jenny)",
     "nav.about": "About Us",
     "nav.contact": "Contact",
-    "nav.jenny.painPoints": "Pain Points",
-    "nav.jenny.solution": "Solution",
-    "nav.jenny.coreFeatures": "Core Capabilities",
-    "nav.jenny.home": "Back to Home",
-    "nav.jenny.bookDemo": "Book a Demo",
-
     // Home - Hero
     "home.hero.badge": "<span class=\"badge-dot\"></span> AI-Powered Enterprise Solutions",
     "home.hero.title": "Building Your<br /><span class=\"gradient-text\">AI Agent Team</span>",
