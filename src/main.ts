@@ -270,7 +270,18 @@ function initContactForm() {
 function initSplashScreen() {
   const splash = document.getElementById('splash-screen');
   const canvas = document.getElementById('splashCanvas') as HTMLCanvasElement | null;
+  
+  // If splash screen element doesn't exist, exit.
   if (!splash || !canvas) return;
+
+  // Check if splash screen has already been played in this session
+  if (sessionStorage.getItem('splashPlayed') === 'true') {
+    splash.style.display = 'none'; // Instantly hide without animation
+    return;
+  }
+
+  // Mark as played for future navigations
+  sessionStorage.setItem('splashPlayed', 'true');
 
   document.body.style.overflow = 'hidden';
 
