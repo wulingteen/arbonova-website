@@ -905,17 +905,15 @@ textarea {
 }
 
 .ceo-avatar {
-  width: 80px;
-  height: 80px;
-  border: var(--brutal-border);
-  border-radius: var(--radius-md);
+  width: 220px;
+  height: 280px;
+  border-radius: var(--radius-sm);
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--bg-primary);
+  background: transparent;
   flex-shrink: 0;
-  box-shadow: 2px 2px 0 var(--text-primary);
-  color: var(--text-secondary);
+  overflow: hidden;
 }
 
 .ceo-info {
@@ -923,32 +921,40 @@ textarea {
 }
 
 .ceo-name {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   font-weight: 800;
   letter-spacing: -0.02em;
   color: var(--text-primary);
-  line-height: 1.1;
+  line-height: 1.2;
 }
 
 .ceo-name-zh {
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 600;
   color: var(--text-secondary);
-  margin-left: 6px;
+  display: block;
+  margin-bottom: 12px;
 }
 
-.ceo-title {
-  font-size: 0.85rem;
-  font-weight: 600;
+.ceo-title-zh {
+  font-size: 1rem;
+  font-weight: 700;
   color: var(--accent-gold);
-  text-transform: uppercase;
+  line-height: 1.4;
+}
+
+.ceo-title-en {
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: var(--accent-gold);
   letter-spacing: 1px;
-  margin: 6px 0 4px;
+  margin-bottom: 12px;
 }
 
 .ceo-cred {
-  font-size: 0.82rem;
-  color: var(--text-muted);
+  font-size: 0.9rem;
+  color: var(--text-primary);
+  font-weight: 500;
   margin-bottom: 16px;
 }
 
@@ -1648,6 +1654,7 @@ textarea {
   font-size: 1.1rem;
   padding: 16px 32px;
 }
+
 /* Language Switch Button */
 .nav-link.lang-switch {
   font-weight: 700;
@@ -1658,10 +1665,20 @@ textarea {
   display: inline-block;
   margin-left: 8px;
 }
+
 .nav-link.lang-switch::after {
   display: none;
 }
+
 .nav-link.lang-switch:hover {
   background: var(--accent-green);
   color: #FFF;
+}
+
+.ceo-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: inherit;
 }
