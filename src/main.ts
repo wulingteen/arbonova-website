@@ -504,7 +504,7 @@ const translations: Record<string, Record<string, string>> = {
     "home.about.v2.title": "Vision",
     "home.about.v2.desc": "To become the most trusted AI Agent Team solution provider in the Asia-Pacific region.",
     "home.about.v3.title": "Core Philosophy",
-    "home.about.v3.desc": "<strong>Human-Centric Tech as the Roots</strong><br />Financial-grade risk control × PMP® precision execution × AI multi-agent collaboration.",
+    "home.about.v3.desc": "Human-Centric Tech as the Roots",
 
     // Home - Contact & Footer
     "home.contact.tag": "Contact Us",
