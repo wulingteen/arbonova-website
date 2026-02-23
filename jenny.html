@@ -30,6 +30,7 @@
 
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <link rel="stylesheet" href="/src/style.css" />
+  <link rel="stylesheet" href="/src/jenny.css" />
 
   <!-- JSON-LD Structured Data -->
   <script type="application/ld+json">
@@ -62,15 +63,7 @@
   </script>
 </head>
 
-<body>
-  <!-- ========== DYNAMIC NETWORK SPLASH SCREEN ========== -->
-  <div id="splash-screen">
-    <canvas id="splashCanvas"></canvas>
-    <div class="splash-bottom">
-      <img src="./arbonova-logo.png" alt="ArboNova Logo" class="splash-logo-img" />
-      <div class="splash-text">為企業打造專屬 AI Agent 團隊，釋放無限可能。</div>
-    </div>
-  </div>
+<body class="jenny-page">
 
   <!-- ========== NAVIGATION ========== -->
   <nav class="navbar" id="navbar">
@@ -92,200 +85,85 @@
     </div>
   </nav>
 
-  <!-- ========== HERO SECTION ========== -->
-  <section class="hero" id="hero">
-    <canvas id="particleCanvas" class="hero-canvas"></canvas>
-    <div class="hero-content">
-      <div class="hero-badge animate-on-scroll">
-        <span class="badge-dot"></span> 獵頭專用 AI Agent
-      </div>
-      <h1 class="hero-title animate-on-scroll">
-        <span class="gradient-text">Jenny</span><br />
+  <!-- ========== NEW JENNY HERO ========== -->
+  <section class="jenny-hero" id="pain-points">
+    <div class="hero-bg-glow"></div>
+    <div class="jenny-hero-content animate-on-scroll">
+      <div class="jenny-hero-eyebrow">獵頭專用 • AI Agent 團隊</div>
+      <h1 class="jenny-hero-title">Jenny</h1>
+      <p class="jenny-hero-subtitle">
         您的全天候自動化招募戰友
-      </h1>
-      <p class="hero-subtitle animate-on-scroll">
-        讓頂尖獵頭專注於「成交」，繁瑣的聯繫與篩選交給 AI。<br />
-        大幅提升招募效率 (HR Efficiency)！
       </p>
-      <div class="hero-actions animate-on-scroll">
-        <a href="#contact" class="btn btn-primary">
-          <span>立即預約展示</span>
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.8">
-            <path d="M4 12h16m-6-6 l6 6-6 6" />
-          </svg>
-        </a>
-      </div>
-    </div>
-    <div class="hero-scroll-indicator">
-      <div class="scroll-line"></div>
-    </div>
-  </section>
-  <!-- ========== PAIN POINTS SECTION ========== -->
-  <section class="section pain-points" id="pain-points">
-    <div class="container">
-      <div class="section-header animate-on-scroll">
-        <span class="section-tag">痛點共鳴</span>
-        <h2 class="section-title">這是不是您團隊<br /><span class="gradient-text">每天面臨的挑戰？</span></h2>
-        <p class="section-desc">作為頂尖的獵頭顧問，Bruce的行事曆總是排滿了與高階人才的深度洽談會議。然而，在會議之外，他每天仍需消耗大量時間與精力在這些事情上：</p>
-      </div>
-      <div class="features-grid">
-        <div class="feature-card feature-card--dark animate-on-scroll">
-          <div class="feature-icon icon-purple">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.8">
-              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-              <polyline points="14 2 14 8 20 8"></polyline>
-              <line x1="16" y1="13" x2="8" y2="13"></line>
-              <line x1="16" y1="17" x2="8" y2="17"></line>
-              <polyline points="10 9 9 9 8 9"></polyline>
-            </svg>
-          </div>
-          <h3 class="feature-title">無止盡的條件比對</h3>
-          <p class="feature-desc">在成千上萬的履歷中，逐字確認是否符合 JD (職缺描述) 要求。</p>
-        </div>
-        <div class="feature-card feature-card--gold animate-on-scroll">
-          <div class="feature-icon icon-gold">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.8">
-              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-              <polyline points="22,6 12,13 2,6"></polyline>
-            </svg>
-          </div>
-          <h3 class="feature-title">繁瑣的文書溝通</h3>
-          <p class="feature-desc">撰寫並調整無數封客製化開發信件 (Cold Emails)。</p>
-        </div>
-        <div class="feature-card feature-card--green animate-on-scroll">
-          <div class="feature-icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.8">
-              <circle cx="12" cy="12" r="10"></circle>
-              <polyline points="12 6 12 12 16 14"></polyline>
-            </svg>
-          </div>
-          <h3 class="feature-title">耗時的進度追蹤</h3>
-          <p class="feature-desc">苦苦等待候選人回覆，並手動記錄每位人才的聯繫進度。</p>
-        </div>
-      </div>
-      <div class="pain-point-conclusion animate-on-scroll" style="text-align: center; margin-top: 40px;">
-        <p style="font-size: 1.2rem; font-weight: 500;">顧問的時間，應該花在「建立人際連結」與「促成交易」，而不是行政作業。<br /><span
-            class="gradient-text">這正是 ArboNova™ 致力解決的行業痛點。</span></p>
+      <div class="jenny-hero-cta">
+        <a href="#contact" class="jenny-btn-primary">立即預約展示</a>
+        <a href="#core-features" class="jenny-btn-secondary">深入了解功能</a>
       </div>
     </div>
   </section>
 
-  <!-- ========== SOLUTION SECTION ========== -->
-  <section class="section about" id="solution">
-    <div class="container">
-      <div class="about-grid">
-        <div class="about-content animate-on-scroll">
-          <span class="section-tag">解決方案</span>
-          <h2 class="section-title">遇見 Jenny<br /><span class="gradient-text">全球首創</span> Multi-Agent 獵頭專用 AI 助理</h2>
-          <p class="about-text">
-            為了徹底釋放獵頭顧問的生產力，ArboNova™ 攜手業界頂尖夥伴，共同研發了 Hunter 專用 AI Agent —— Jenny。<br /><br />
-            Jenny 具備三大核心職能，透過多個大腦協同運作：
-          </p>
-          <div class="about-values">
-            <div class="value-item">
-              <div class="value-icon">
-                <span style="font-size: 24px;">🔍</span>
-              </div>
-              <div>
-                <h4>深度分析</h4>
-                <p>專注閱讀並深度理解 JD (職缺描述) 的核心需求。</p>
-              </div>
-            </div>
-            <div class="value-item">
-              <div class="value-icon">
-                <span style="font-size: 24px;">🎯</span>
-              </div>
-              <div>
-                <h4>精挑人選</h4>
-                <p>在茫茫人海中，精準掃描並篩選出最合適的履歷。</p>
-              </div>
-            </div>
-            <div class="value-item">
-              <div class="value-icon">
-                <span style="font-size: 24px;">💬</span>
-              </div>
-              <div>
-                <h4>精準洽談</h4>
-                <p>根據候選人背景，自動撰寫最高回覆率的客製化接觸信件。</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="about-visual animate-on-scroll">
-          <div class="ceo-card"
-            style="display: flex; align-items: center; justify-content: center; height: 100%; min-height: 400px; background: var(--bg-secondary); border-radius: var(--radius-lg);">
-            <span style="font-size: 100px;">🤖</span>
-          </div>
-        </div>
-      </div>
+  <!-- ========== BIG STATEMENT (THE PROBLEM) ========== -->
+  <section class="jenny-statement" id="solution">
+    <div class="jenny-statement-text animate-on-scroll">
+      這是不是您團隊每天面臨的挑戰？<br />
+      <span>顧問的時間，應該花在「建立人際連結」與「促成交易」，而不是無止盡的條件比對、文書溝通與進度追蹤。</span>
     </div>
   </section>
 
-  <!-- ========== CORE EMPOWERMENT (FEATURES) ========== -->
-  <section class="section features" id="core-features">
-    <div class="container">
-      <div class="section-header animate-on-scroll">
-        <span class="section-tag">核心賦能</span>
-        <h2 class="section-title">Jenny的四大核心賦能<br /><span class="gradient-text">打造高效招募引擎</span></h2>
-        <p class="section-desc">大幅提升 HR Efficiency，讓招募流程從此脫胎換骨</p>
+  <!-- ========== BENTO BOX (CORE FEATURES) ========== -->
+  <section class="jenny-bento-section" id="core-features">
+    <div class="jenny-bento-header animate-on-scroll">
+      <h2>Jenny 的四大核心賦能</h2>
+      <p style="color: #86868b; font-size: 1.5rem; font-weight: 500;">打造高效招募引擎 (HR Efficiency)</p>
+    </div>
+
+    <div class="jenny-bento-grid">
+
+      <!-- Bento 1: Large (Solution Intro) -->
+      <div class="bento-card bento-large animate-on-scroll">
+        <div class="bento-content">
+          <div class="bento-icon">🤖</div>
+          <h3 class="bento-title bento-gradient">全球首創<br />Multi-Agent 助理</h3>
+          <p class="bento-desc">為了徹底釋放生產力，ArboNova™ 攜手業界頂尖夥伴，共同研發了 Jenny。她具備三大獨立大腦：深度理解 JD、精挑合適履歷，並自動撰寫高回覆率的破冰開發信。</p>
+        </div>
+        <div class="bento-visual">🧠</div>
       </div>
-      <div class="features-grid">
-        <div class="feature-card feature-card--green animate-on-scroll">
-          <div class="feature-card-num">01</div>
-          <div class="feature-icon">
-            <span style="font-size: 24px;">⚡</span>
-          </div>
-          <h3 class="feature-title">零時差的自動化聯繫</h3>
-          <p class="feature-desc">從初步接觸到後續回信，AI 皆可全自動完成。Jenny能針對不同候選人的背景亮點，自動生成專屬的破冰信件並發送，大幅提升信件開信率與回覆率。</p>
-          <div class="feature-tag">Automated Outreach</div>
-        </div>
-        <div class="feature-card feature-card--gold animate-on-scroll">
-          <div class="feature-card-num">02</div>
-          <div class="feature-icon icon-blue">
-            <span style="font-size: 24px;">🎯</span>
-          </div>
-          <h3 class="feature-title">深度語意精準匹配</h3>
-          <p class="feature-desc">超越傳統關鍵字搜尋。Jenny具備深度分析能力，能精準洞察JD與候選人履歷之間的「隱性適配度」，為您挖掘出最符合企業文化與技能需求的黑馬人才。</p>
-          <div class="feature-tag">Precision Matching</div>
-        </div>
-        <div class="feature-card feature-card--dark animate-on-scroll">
-          <div class="feature-card-num">03</div>
-          <div class="feature-icon icon-purple">
-            <span style="font-size: 24px;">📊</span>
-          </div>
-          <h3 class="feature-title">全自動化流程追蹤</h3>
-          <p class="feature-desc">顧問不需再死盯著信箱。Jenny會自動追蹤候選人的回覆狀態與意願，並進行系統化分類。讓獵頭顧問只需在最關鍵的時刻介入，專注於最後的「面試與成交」環節。</p>
-          <div class="feature-tag">Process Management</div>
-        </div>
-        <div class="feature-card feature-card--accent animate-on-scroll">
-          <div class="feature-card-num">04</div>
-          <div class="feature-icon icon-gold">
-            <span style="font-size: 24px;">🏆</span>
-          </div>
-          <h3 class="feature-title">實戰驗證，提升面試成功率</h3>
-          <p class="feature-desc">我們的 AI 不只是理論。Jenny的大腦結合了 ArboNova™
-            團隊參與國內外各大企業面試所累積的獨家實戰RAG資料庫，並吸收了多位企業內部用人主管的真實反饋。透過與專業獵頭機構的實測驗證，ArboNova™ 能實質幫助合作夥伴提高人選的推薦命中率與面試成功率。</p>
-          <div class="feature-tag">Proven Success</div>
+
+      <!-- Bento 2: Standard -->
+      <div class="bento-card animate-on-scroll">
+        <div class="bento-content">
+          <div class="bento-icon">⚡</div>
+          <h3 class="bento-title">零時差的自動聯繫</h3>
+          <p class="bento-desc">從初步接觸到後續回信全自動完成。自動生成專屬破冰信件並發送，大幅提升開信率與回覆率。</p>
         </div>
       </div>
+
+      <!-- Bento 3: Standard -->
+      <div class="bento-card animate-on-scroll">
+        <div class="bento-content">
+          <div class="bento-icon">🎯</div>
+          <h3 class="bento-title">深度語意精準匹配</h3>
+          <p class="bento-desc">超越傳統關鍵字搜尋，精準洞察 JD 與履歷間的「隱性適配度」，為您挖掘最符合企業文化的黑馬。</p>
+        </div>
+      </div>
+
+      <!-- Bento 4: Large (Process Tracking) -->
+      <div class="bento-card bento-large animate-on-scroll" style="align-items: flex-end;">
+        <div class="bento-visual" style="left: -20px; bottom: 0; right: auto; font-size: 250px;">📊</div>
+        <div class="bento-content">
+          <div class="bento-icon">🏆</div>
+          <h3 class="bento-title">全自動流程追蹤<br />實戰面試驗證</h3>
+          <p class="bento-desc">自動追蹤候選人回覆與意願並系統化分類，結合獨家 RAG 實戰資料庫，實質提高人選推薦命中率。獵頭顧問只需在最關鍵時刻介入成交環節。</p>
+        </div>
+      </div>
+
     </div>
   </section>
 
-  <!-- ========== VALUE CALL OUT ========== -->
-  <section class="section jenny-banner" id="value-callout" style="background: var(--bg-primary);">
-    <div class="container">
-      <div class="jenny-banner-content animate-on-scroll"
-        style="background: var(--bg-primary); border: none; box-shadow: none;">
-        <h2 class="jenny-banner-title" style="font-size: 2.5rem;">
-          迎戰 AI 時代，<br /><span class="gradient-text">讓科技放大您的人性價值</span>
-        </h2>
-        <p style="font-size: 1.2rem; color: var(--text-secondary); margin-bottom: 32px; line-height: 1.6;">
-          在人才競爭白熱化的時代，ArboNova™ 幫助頂尖獵頭顧問從繁瑣、低效的聯繫工作中徹底解放。讓 AI 負責數據與流程，讓您專注於發揮無可取代的「識人眼光」與「談判魅力」。
-        </p>
-        <p style="font-size: 1.4rem; font-weight: 700; color: var(--text-primary);">
-          準備好讓您的招募團隊效率翻倍了嗎？
-        </p>
-      </div>
+  <!-- ========== BIG CALLOUT ========== -->
+  <section class="jenny-statement" style="background-color: #000; padding: 100px 20px;">
+    <div class="jenny-statement-text animate-on-scroll">
+      迎戰 AI 時代，<br /><span
+        style="background: var(--jenny-gradient); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; color: transparent;">讓科技放大您的人性價值。</span>
     </div>
   </section>
 
