@@ -537,12 +537,15 @@ function initI18n() {
       document.querySelectorAll('[data-i18n]').forEach((el) => {
         const key = el.getAttribute('data-i18n');
         if (key) {
-          if (currentLang === 'en' && translations.en[key]) {
-            // Store original Chinese text if not already stored
-            if (!el.hasAttribute('data-i18n-zh')) {
-              el.setAttribute('data-i18n-zh', el.innerHTML);
+          if (currentLang === 'en') {
+            const translatedText = translations.en[key];
+            if (translatedText) {
+              // Store original Chinese text if not already stored
+              if (!el.hasAttribute('data-i18n-zh')) {
+                el.setAttribute('data-i18n-zh', el.innerHTML);
+              }
+              el.innerHTML = translatedText;
             }
-            el.innerHTML = translations.en[key];
           } else if (currentLang === 'zh' && el.hasAttribute('data-i18n-zh')) {
             // Restore original Chinese text
             el.innerHTML = el.getAttribute('data-i18n-zh')!;
