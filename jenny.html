@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ArboNova 宇豆樹科技 — AI Agent Team | 執行長 Tim Kuo 郭哄志</title>
+  <meta name="description"
+    content="ArboNova 宇豆樹科技由 Tim Kuo（郭哄志）創立，結合國際金融背景與 PMP® 認證，落實智慧雨林 Intelligent Rainforest 核心理念，提供企業級 AI Agent Team 解決方案。" />
+  <meta name="keywords"
+    content="ArboNova, 宇豆樹科技, Tim Kuo, 郭哄志, AI Agent Team, 智慧雨林, Intelligent Rainforest, PMP, 企業AI, 人工智慧" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="ArboNova 宇豆樹科技 — AI Agent Team | Tim Kuo 郭哄志" />
+  <meta property="og:description" content="由 Tim Kuo 創立的 AI Agent 公司，以智慧雨林理念讓 AI 成為企業長期信任的執行團隊。" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="zh_TW" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="ArboNova 宇豆樹科技 | Tim Kuo 郭哄志" />
+  <meta name="twitter:description" content="AI Agent Team — 智慧雨林 Intelligent Rainforest | 執行長 Tim Kuo PMP®" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+TC:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="stylesheet" href="/src/style.css" />
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "宇豆樹科技 ArboNova Co., Ltd.",
+    "url": "https://arbonova.com.tw",
+    "logo": "https://arbonova.com.tw/favicon.svg",
+    "description": "由 Tim Kuo（郭哄志）創立，提供企業級 AI Agent Team 產品，落實智慧雨林 Intelligent Rainforest 核心理念。",
+    "founder": {
+      "@type": "Person",
+      "name": "Tim Kuo",
+      "alternateName": "郭哄志",
+      "jobTitle": "執行長 CEO",
+      "hasCredential": "PMP® 國際專案管理師",
+      "sameAs": "https://www.linkedin.com/in/tim-kuo-12867165/"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "忠孝東路四段270號7樓",
+      "addressLocality": "大安區",
+      "addressRegion": "臺北市",
+      "addressCountry": "TW"
+    },
+    "telephone": "+886-2-6609-0289",
+    "email": "contact@arbonova.com.tw",
+    "taxID": "60351551"
+  }
+  </script>
+</head>
+
+<body>
+  <!-- ========== DYNAMIC NETWORK SPLASH SCREEN ========== -->
+  <div id="splash-screen">
+    <canvas id="splashCanvas"></canvas>
+    <div class="splash-bottom">
+      <img src="./arbonova-logo.png" alt="ArboNova Logo" class="splash-logo-img" />
+      <div class="splash-text">為企業打造專屬 AI Agent 團隊，釋放無限可能。</div>
+    </div>
+  </div>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <img src="./arbonova-logo.png" alt="ArboNova Logo" class="nav-logo-img" />
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#features" class="nav-link">產品功能</a></li>
+        <li><a href="#how-it-works" class="nav-link">運作方式</a></li>
+        <li><a href="#use-cases" class="nav-link">應用場景</a></li>
+        <li><a href="#about" class="nav-link">關於我們</a></li>
+        <li><a href="#contact" class="nav-link nav-cta">聯繫我們</a></li>
+        <li><a href="#" class="nav-link lang-switch" title="English Version (Coming Soon)">EN</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section class="hero" id="hero">
+    <canvas id="particleCanvas" class="hero-canvas"></canvas>
+    <div class="hero-content">
+      <div class="hero-badge animate-on-scroll">
+        <span class="badge-dot"></span> 獵頭專用 AI Agent
+      </div>
+      <h1 class="hero-title animate-on-scroll">
+        <span class="gradient-text">Jenny</span><br />
+        您的全天候自動化招募戰友
+      </h1>
+      <p class="hero-subtitle animate-on-scroll">
+        讓頂尖獵頭專注於「成交」，繁瑣的聯繫與篩選交給 AI。<br />
+        大幅提升招募效率 (HR Efficiency)！
+      </p>
+      <div class="hero-actions animate-on-scroll">
+        <a href="#contact" class="btn btn-primary">
+          <span>立即預約展示</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.8">
+            <path d="M4 12h16m-6-6 l6 6-6 6" />
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+  <!-- ========== PAIN POINTS SECTION ========== -->
+  <section class="section pain-points" id="pain-points">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-tag">痛點共鳴</span>
+        <h2 class="section-title">這是不是您團隊<br /><span class="gradient-text">每天面臨的挑戰？</span></h2>
+        <p class="section-desc">作為頂尖的獵頭顧問，Bruce的行事曆總是排滿了與高階人才的深度洽談會議。然而，在會議之外，他每天仍需消耗大量時間與精力在這些事情上：</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card feature-card--dark animate-on-scroll">
+          <div class="feature-icon icon-purple">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.8">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="16" y1="13" x2="8" y2="13"></line>
+              <line x1="16" y1="17" x2="8" y2="17"></line>
+              <polyline points="10 9 9 9 8 9"></polyline>
+            </svg>
+          </div>
+          <h3 class="feature-title">無止盡的條件比對</h3>
+          <p class="feature-desc">在成千上萬的履歷中，逐字確認是否符合 JD (職缺描述) 要求。</p>
+        </div>
+        <div class="feature-card feature-card--gold animate-on-scroll">
+          <div class="feature-icon icon-gold">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.8">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+          </div>
+          <h3 class="feature-title">繁瑣的文書溝通</h3>
+          <p class="feature-desc">撰寫並調整無數封客製化開發信件 (Cold Emails)。</p>
+        </div>
+        <div class="feature-card feature-card--green animate-on-scroll">
+          <div class="feature-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.8">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12 6 12 12 16 14"></polyline>
+            </svg>
+          </div>
+          <h3 class="feature-title">耗時的進度追蹤</h3>
+          <p class="feature-desc">苦苦等待候選人回覆，並手動記錄每位人才的聯繫進度。</p>
+        </div>
+      </div>
+      <div class="pain-point-conclusion animate-on-scroll" style="text-align: center; margin-top: 40px;">
+        <p style="font-size: 1.2rem; font-weight: 500;">顧問的時間，應該花在「建立人際連結」與「促成交易」，而不是行政作業。<br /><span
+            class="gradient-text">這正是 ArboNova™ 致力解決的行業痛點。</span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SOLUTION SECTION ========== -->
+  <section class="section about" id="solution">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-content animate-on-scroll">
+          <span class="section-tag">解決方案</span>
+          <h2 class="section-title">遇見 Jenny<br /><span class="gradient-text">全球首創</span> Multi-Agent 獵頭專用 AI 助理</h2>
+          <p class="about-text">
+            為了徹底釋放獵頭顧問的生產力，ArboNova™ 攜手業界頂尖夥伴，共同研發了 Hunter 專用 AI Agent —— Jenny。<br /><br />
+            Jenny 具備三大核心職能，透過多個大腦協同運作：
+          </p>
+          <div class="about-values">
+            <div class="value-item">
+              <div class="value-icon">
+                <span style="font-size: 24px;">🔍</span>
+              </div>
+              <div>
+                <h4>深度分析</h4>
+                <p>專注閱讀並深度理解 JD (職缺描述) 的核心需求。</p>
+              </div>
+            </div>
+            <div class="value-item">
+              <div class="value-icon">
+                <span style="font-size: 24px;">🎯</span>
+              </div>
+              <div>
+                <h4>精挑人選</h4>
+                <p>在茫茫人海中，精準掃描並篩選出最合適的履歷。</p>
+              </div>
+            </div>
+            <div class="value-item">
+              <div class="value-icon">
+                <span style="font-size: 24px;">💬</span>
+              </div>
+              <div>
+                <h4>精準洽談</h4>
+                <p>根據候選人背景，自動撰寫最高回覆率的客製化接觸信件。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-visual animate-on-scroll">
+          <div class="ceo-card"
+            style="display: flex; align-items: center; justify-content: center; height: 100%; min-height: 400px; background: var(--bg-secondary); border-radius: var(--radius-lg);">
+            <span style="font-size: 100px;">🤖</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CORE EMPOWERMENT (FEATURES) ========== -->
+  <section class="section features" id="core-features">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-tag">核心賦能</span>
+        <h2 class="section-title">Jenny的四大核心賦能<br /><span class="gradient-text">打造高效招募引擎</span></h2>
+        <p class="section-desc">大幅提升 HR Efficiency，讓招募流程從此脫胎換骨</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card feature-card--green animate-on-scroll">
+          <div class="feature-card-num">01</div>
+          <div class="feature-icon">
+            <span style="font-size: 24px;">⚡</span>
+          </div>
+          <h3 class="feature-title">零時差的自動化聯繫</h3>
+          <p class="feature-desc">從初步接觸到後續回信，AI 皆可全自動完成。Jenny能針對不同候選人的背景亮點，自動生成專屬的破冰信件並發送，大幅提升信件開信率與回覆率。</p>
+          <div class="feature-tag">Automated Outreach</div>
+        </div>
+        <div class="feature-card feature-card--gold animate-on-scroll">
+          <div class="feature-card-num">02</div>
+          <div class="feature-icon icon-blue">
+            <span style="font-size: 24px;">🎯</span>
+          </div>
+          <h3 class="feature-title">深度語意精準匹配</h3>
+          <p class="feature-desc">超越傳統關鍵字搜尋。Jenny具備深度分析能力，能精準洞察JD與候選人履歷之間的「隱性適配度」，為您挖掘出最符合企業文化與技能需求的黑馬人才。</p>
+          <div class="feature-tag">Precision Matching</div>
+        </div>
+        <div class="feature-card feature-card--dark animate-on-scroll">
+          <div class="feature-card-num">03</div>
+          <div class="feature-icon icon-purple">
+            <span style="font-size: 24px;">📊</span>
+          </div>
+          <h3 class="feature-title">全自動化流程追蹤</h3>
+          <p class="feature-desc">顧問不需再死盯著信箱。Jenny會自動追蹤候選人的回覆狀態與意願，並進行系統化分類。讓獵頭顧問只需在最關鍵的時刻介入，專注於最後的「面試與成交」環節。</p>
+          <div class="feature-tag">Process Management</div>
+        </div>
+        <div class="feature-card feature-card--accent animate-on-scroll">
+          <div class="feature-card-num">04</div>
+          <div class="feature-icon icon-gold">
+            <span style="font-size: 24px;">🏆</span>
+          </div>
+          <h3 class="feature-title">實戰驗證，提升面試成功率</h3>
+          <p class="feature-desc">我們的 AI 不只是理論。Jenny的大腦結合了 ArboNova™
+            團隊參與國內外各大企業面試所累積的獨家實戰RAG資料庫，並吸收了多位企業內部用人主管的真實反饋。透過與專業獵頭機構的實測驗證，ArboNova™ 能實質幫助合作夥伴提高人選的推薦命中率與面試成功率。</p>
+          <div class="feature-tag">Proven Success</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== VALUE CALL OUT ========== -->
+  <section class="section jenny-banner" id="value-callout" style="background: var(--bg-primary);">
+    <div class="container">
+      <div class="jenny-banner-content animate-on-scroll"
+        style="background: var(--bg-primary); border: none; box-shadow: none;">
+        <h2 class="jenny-banner-title" style="font-size: 2.5rem;">
+          迎戰 AI 時代，<br /><span class="gradient-text">讓科技放大您的人性價值</span>
+        </h2>
+        <p style="font-size: 1.2rem; color: var(--text-secondary); margin-bottom: 32px; line-height: 1.6;">
+          在人才競爭白熱化的時代，ArboNova™ 幫助頂尖獵頭顧問從繁瑣、低效的聯繫工作中徹底解放。讓 AI 負責數據與流程，讓您專注於發揮無可取代的「識人眼光」與「談判魅力」。
+        </p>
+        <p style="font-size: 1.4rem; font-weight: 700; color: var(--text-primary);">
+          準備好讓您的招募團隊效率翻倍了嗎？
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========== CONTACT SECTION ========== -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info animate-on-scroll">
+          <span class="section-tag">聯繫我們</span>
+          <h2 class="section-title">開始打造<br /><span class="gradient-text">您的 AI 團隊</span></h2>
+          <p class="contact-text">歡迎與我們聯繫，了解 AI Agent Team 如何為您的企業創造價值。</p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.8">
+                  <circle cx="12" cy="12" r="6" />
+                  <circle cx="12" cy="12" r="2" />
+                </svg>
+              </div>
+              <div>
+                <span class="contact-label">地址</span>
+                <span class="contact-value">臺北市大安區忠孝東路四段270號7樓</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.8">
+                  <circle cx="12" cy="12" r="8" stroke-dasharray="2 2" />
+                  <path d="M12 4v16 M4 12h16" />
+                </svg>
+              </div>
+              <div>
+                <span class="contact-label">電話</span>
+                <span class="contact-value">+886 2 6609 0289</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.8">
+                  <polygon points="12 4 16 12 12 20 8 12" />
+                  <circle cx="12" cy="12" r="2" />
+                </svg>
+              </div>
+              <div>
+                <span class="contact-label">手機</span>
+                <span class="contact-value">+886 902 656 250</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.8">
+                  <rect x="4" y="8" width="16" height="8" />
+                  <path d="M4 12h16" />
+                </svg>
+              </div>
+              <div>
+                <span class="contact-label">信箱</span>
+                <span class="contact-value">contact@arbonova.com.tw</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form-wrapper animate-on-scroll">
+          <form class="contact-form" id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">姓名</label>
+                <input type="text" id="name" name="name" placeholder="您的姓名" required />
+              </div>
+              <div class="form-group">
+                <label for="company">公司名稱</label>
+                <input type="text" id="company" name="company" placeholder="公司名稱" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">電子信箱</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required />
+            </div>
+            <div class="form-group">
+              <label for="challenge">您的團隊目前面臨的最大招募挑戰是？</label>
+              <select id="challenge" name="challenge" required>
+                <option value="" disabled selected>請選擇最大挑戰</option>
+                <option value="履歷篩選太慢">履歷篩選太慢</option>
+                <option value="開發信回覆率低">開發信回覆率低</option>
+                <option value="流程難以追蹤">流程難以追蹤</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">訊息</label>
+              <textarea id="message" name="message" rows="4" placeholder="請描述您的需求…" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <span>送出訊息</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.8">
+                <path d="M2 12h16m-6-6 l6 6-6 6" />
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="#hero" class="footer-logo">
+            <img src="./arbonova-logo.png" alt="ArboNova Logo" class="footer-logo-img" />
+          </a>
+          <p class="footer-tagline">AI Agent Team — 企業智慧解決方案</p>
+        </div>
+        <div class="footer-links">
+          <a href="#features">產品功能</a>
+          <a href="#how-it-works">運作方式</a>
+          <a href="#use-cases">應用場景</a>
+          <a href="#about">關於我們</a>
+          <a href="#contact">聯繫我們</a>
+        </div>
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/company/arbonova-ai/" target="_blank" rel="noopener noreferrer"
+            class="social-link" aria-label="LinkedIn">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 宇豆樹科技 ArboNova Co., Ltd. All rights reserved. | 統一編號：60351551</p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>

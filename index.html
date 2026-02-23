@@ -59,8 +59,8 @@
     "taxID": "60351551"
   }
   </script>
-  <script type="module" crossorigin src="/arbonova-website/assets/index-BXZPiIAv.js"></script>
-  <link rel="stylesheet" crossorigin href="/arbonova-website/assets/index-B5jxWxWG.css">
+  <script type="module" crossorigin src="/arbonova-website/assets/index-CMSesqdS.js"></script>
+  <link rel="stylesheet" crossorigin href="/arbonova-website/assets/index-CxjCHtKR.css">
 </head>
 
 <body>
@@ -83,8 +83,10 @@
         <li><a href="#features" class="nav-link">產品功能</a></li>
         <li><a href="#how-it-works" class="nav-link">運作方式</a></li>
         <li><a href="#use-cases" class="nav-link">應用場景</a></li>
+        <li><a href="/arbonova-website/jenny.html" class="nav-link">AI 招募助理 (AI Agent)</a></li>
         <li><a href="#about" class="nav-link">關於我們</a></li>
         <li><a href="#contact" class="nav-link nav-cta">聯繫我們</a></li>
+        <li><a href="#" class="nav-link lang-switch" title="English Version (Coming Soon)">EN</a></li>
       </ul>
       <button class="hamburger" id="hamburger" aria-label="Toggle menu">
         <span></span><span></span><span></span>
@@ -135,6 +137,24 @@
     </div>
     <div class="hero-scroll-indicator">
       <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ========== JENNY BANNER SECTION ========== -->
+  <section class="section jenny-banner" id="jenny-banner">
+    <div class="container">
+      <div class="jenny-banner-content animate-on-scroll">
+        <h2 class="jenny-banner-title">
+          讓頂尖獵頭專注於「成交」，繁瑣聯繫交給 AI。<br />
+          <span class="gradient-text">遇見 Jenny</span> —— 您的全天候 Multi-Agent 招募戰友。
+        </h2>
+        <a href="/arbonova-website/jenny.html" class="btn btn-primary jenny-banner-btn">
+          <span>了解 Jenny 如何倍增面試率</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+            <path d="M5 12h14M12 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </a>
+      </div>
     </div>
   </section>
 
@@ -376,7 +396,7 @@
                 </svg>
               </div>
               <div>
-                <h4>願景</h4>
+                <h4>願景 Vision</h4>
                 <p>成為亞太區最值得信賴的 AI Agent Team 解決方案供應商。</p>
               </div>
             </div>
@@ -388,8 +408,9 @@
                 </svg>
               </div>
               <div>
-                <h4>核心理念</h4>
-                <p>金融級風控思維 × PMP® 精準執行 × AI 多智慧體協作。</p>
+                <h4>核心理念 Core Philosophy</h4>
+                <p><strong>科技為底層根系，人性為生長核心 Human-Centric Tech</strong><br />
+                  金融級風控思維 × PMP® 精準執行 × AI 多智慧體協作。</p>
               </div>
             </div>
           </div>
@@ -398,16 +419,12 @@
         <!-- CEO Card -->
         <div class="about-visual animate-on-scroll">
           <div class="ceo-card">
-            <div class="ceo-avatar">
-              <svg viewBox="0 0 80 80" width="80" height="80" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="40" cy="32" r="18" stroke="currentColor" stroke-width="1.2" />
-                <path d="M10 70c0-16.569 13.431-30 30-30s30 13.431 30 30" stroke="currentColor" stroke-width="1.2"
-                  stroke-linecap="round" />
-              </svg>
+            <div class="ceo-avatar-wrapper">
+              <img src="./founder-ceo.jpg" alt="Tim Kuo 郭哄志" class="ceo-photo" />
             </div>
             <div class="ceo-info">
               <div class="ceo-name">Tim Kuo <span class="ceo-name-zh">郭哄志</span></div>
-              <div class="ceo-title">執行長 CEO &amp; Founder</div>
+              <div class="ceo-title">創辦人暨執行長 Founder &amp; CEO</div>
               <div class="ceo-cred">PMP® · 國際金融背景</div>
               <div class="ceo-links">
                 <a href="https://www.linkedin.com/in/tim-kuo-12867165/" target="_blank" rel="noopener noreferrer"
@@ -519,6 +536,15 @@
             <div class="form-group">
               <label for="email">電子信箱</label>
               <input type="email" id="email" name="email" placeholder="your@email.com" required />
+            </div>
+            <div class="form-group">
+              <label for="challenge">您的團隊目前面臨的最大招募挑戰是？</label>
+              <select id="challenge" name="challenge" required>
+                <option value="" disabled selected>請選擇最大挑戰</option>
+                <option value="履歷篩選太慢">履歷篩選太慢</option>
+                <option value="開發信回覆率低">開發信回覆率低</option>
+                <option value="流程難以追蹤">流程難以追蹤</option>
+              </select>
             </div>
             <div class="form-group">
               <label for="message">訊息</label>
