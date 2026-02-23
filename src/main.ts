@@ -400,6 +400,65 @@ function initSplashScreen() {
   }, 4800);
 }
 
+// ─── Internationalization (i18n) ──────────────────────────────
+const translations: Record<string, Record<string, string>> = {
+  en: {
+    // Navigation
+    "nav.features": "Features",
+    "nav.howItWorks": "How It Works",
+    "nav.useCases": "Use Cases",
+    "nav.jennyLink": "AI Agent (Jenny)",
+    "nav.about": "About Us",
+    "nav.contact": "Contact",
+    "nav.jenny.painPoints": "Pain Points",
+    "nav.jenny.solution": "Solution",
+    "nav.jenny.coreFeatures": "Core Capabilities",
+    "nav.jenny.home": "Back to Home",
+    "nav.jenny.bookDemo": "Book a Demo",
+
+    // This is just the framework; we will expand this JSON with more keys.
+  }
+};
+
+let currentLang = 'zh';
+
+function initI18n() {
+  const langSwitchBtns = document.querySelectorAll('.lang-switch');
+  
+  langSwitchBtns.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      
+      // Toggle language
+      currentLang = currentLang === 'zh' ? 'en' : 'zh';
+      
+      // Update button text globally
+      langSwitchBtns.forEach(b => {
+        b.textContent = currentLang === 'zh' ? 'EN' : '中文';
+      });
+      
+      // Update document content
+      document.querySelectorAll('[data-i18n]').forEach((el) => {
+        const key = el.getAttribute('data-i18n');
+        if (key) {
+          if (currentLang === 'en' && translations.en[key]) {
+            // Store original Chinese text if not already stored
+            if (!el.hasAttribute('data-i18n-zh')) {
+              el.setAttribute('data-i18n-zh', el.innerHTML);
+            }
+            el.innerHTML = translations.en[key];
+          } else if (currentLang === 'zh' && el.hasAttribute('data-i18n-zh')) {
+            // Restore original Chinese text
+            el.innerHTML = el.getAttribute('data-i18n-zh')!;
+          }
+        }
+      });
+      
+      // Re-initialize any dynamic text resizing or interactions if needed
+    });
+  });
+}
+
 // ─── Initialize Everything ─────────────────────────────────────
 document.addEventListener('DOMContentLoaded', () => {
   initSplashScreen();
@@ -409,4 +468,5 @@ document.addEventListener('DOMContentLoaded', () => {
   initCounters();
   initSmoothScroll();
   initContactForm();
+  initI18n();
 });
