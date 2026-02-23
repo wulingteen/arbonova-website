@@ -507,8 +507,14 @@ const translations: Record<string, Record<string, string>> = {
     "home.about.v3.desc": "<strong>Human-Centric Tech as the Roots</strong><br />Financial-grade risk control × PMP® precision execution × AI multi-agent collaboration.",
 
     // Home - Contact & Footer
+    "home.contact.tag": "Contact Us",
     "home.contact.title": "Start Creating Your<br /><span class=\"gradient-text\">AI Agent Team</span>",
     "home.contact.desc": "Leave your information below, and our experts will contact you to arrange a customized demonstration.",
+    "home.contact.label.address": "Address",
+    "home.contact.val.address": "7F, No. 270, Sec. 4, Zhongxiao E. Rd., Da'an Dist., Taipei City",
+    "home.contact.label.phone": "Phone",
+    "home.contact.label.mobile": "Mobile",
+    "home.contact.label.email": "Email",
     "home.contact.form.name": "Your Name *",
     "home.contact.form.title": "Company Title *",
     "home.contact.form.company": "Company Name *",
