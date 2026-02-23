@@ -416,7 +416,103 @@ const translations: Record<string, Record<string, string>> = {
     "nav.jenny.home": "Back to Home",
     "nav.jenny.bookDemo": "Book a Demo",
 
-    // This is just the framework; we will expand this JSON with more keys.
+    // Home - Hero
+    "home.hero.badge": "<span class=\"badge-dot\"></span> AI-Powered Enterprise Solutions",
+    "home.hero.title": "Building Your<br /><span class=\"gradient-text\">AI Agent Team</span>",
+    "home.hero.subtitle": "Transforming complex business logic into automated workflows through multi-agent collaboration.<br />Empower your enterprise with unprecedented efficiency.",
+    "home.hero.btn.consult": "<span>Get Started</span> <svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"0.8\"><path d=\"M4 12h16m-6-6 l6 6-6 6\"/></svg>",
+    "home.hero.btn.more": "Learn More",
+    "home.hero.stat1.label": "Enterprise Clients",
+    "home.hero.stat2.label": "AI Agents Deployed",
+    "home.hero.stat3.label": "Client Satisfaction",
+
+    // Jenny Page - Hero & Stats
+    "jenny.hero.eyebrow": "Exclusive for Recruiters • AI Agent Team",
+    "jenny.hero.title": "Jenny",
+    "jenny.hero.subtitle": "Your 24/7 Automated Recruitment Ally",
+    "jenny.hero.btn.demo": "Book a Demo",
+    "jenny.hero.btn.features": "Explore Features",
+    "jenny.statement.text": "Is this the daily challenge your team faces?<br /><span>A consultant's time should be spent on \"building human connections\" and \"closing deals\", not endless resume screening, paperwork, and progress tracking.</span>",
+
+    // Jenny Page - Core Features
+    "jenny.bento.header.title": "Jenny's 4 Core Capabilities",
+    "jenny.bento.header.subtitle": "Building a High-Efficiency Recruitment Engine (HR Efficiency)",
+    "jenny.bento.f1.title": "World's First<br />Multi-Agent Assistant",
+    "jenny.bento.f1.desc": "To completely unleash productivity, ArboNova™ partnered with top industry experts to develop Jenny. She possesses three independent brains: deeply understanding the JD, hand-picking suitable resumes, and automatically writing high-response cold outreach emails.",
+    "jenny.bento.f2.title": "Zero-Delay Automated Outreach",
+    "jenny.bento.f2.desc": "From initial contact to follow-up emails, everything is fully automated. She generates and sends personalized icebreaker emails, dramatically increasing open and reply rates.",
+    "jenny.bento.f3.title": "Deep Semantic Matching",
+    "jenny.bento.f3.desc": "Going beyond traditional keyword searches to accurately uncover the \"hidden fit\" between the JD and resumes, digging up the dark horses that best match your corporate culture.",
+    "jenny.bento.f4.title": "Automated Process Tracking<br />& Interview Validation",
+    "jenny.bento.f4.desc": "Automatically tracks candidate responses and intentions, classifying them systematically. Combined with our exclusive RAG candidate database, it substantially improves the accuracy of personnel recommendations. Recruiters only need to step in at the most critical closing stage.",
+    "jenny.callout.text": "In the Age of AI,<br /><span style=\"color: white; text-shadow: none;\">Let tech amplify your human value.</span>",
+
+    // Home - Use Cases
+    "home.features.tag": "Core Capabilities",
+    "home.features.title": "Redefining Enterprise Efficiency<br /><span class=\"gradient-text\">with AI Agent Teams</span>",
+    "home.features.desc": "Our AI Agent Team combines multi-agent technology with deep enterprise integration to deliver four core capabilities.",
+    "home.features.f1.title": "Intelligent Collaboration",
+    "home.features.f1.desc": "Multiple AI Agents perform specialized roles and coordinate like a professional human team to handle complex cross-departmental tasks.",
+    "home.features.f2.title": "Workflow Automation",
+    "home.features.f2.desc": "Fully automate repetitive workflows, from data collection and analysis to report generation, drastically reducing labor costs.",
+    "home.features.f3.title": "Real-time Learning",
+    "home.features.f3.desc": "Agents continuously learn and evolve based on interaction feedback, constantly optimizing decision quality.",
+    // Home - How It Works
+    "home.works.tag": "How It Works",
+    "home.works.title": "Launch Your AI Team<br /><span class=\"gradient-text\">in 3 Steps</span>",
+    "home.works.desc": "From requirement analysis to going live, we design the perfect AI Agent combination for you.",
+    "home.works.s1.title": "Requirement Analysis",
+    "home.works.s1.desc": "Deep dive into your enterprise pain points and process bottlenecks to tailor an AI Agent strategy and deployment architecture.",
+    "home.works.s2.title": "Agent Deployment",
+    "home.works.s2.desc": "Seamlessly integrate the AI Agent Team into your existing systems, including API connections, data flows, and permission settings.",
+    "home.works.s3.title": "Continuous Optimization",
+    "home.works.s3.desc": "Utilize real-time monitoring and feedback loops to continuously tune Agent performance, ensuring steady improvements in quality.",
+
+    // Home - Use Cases
+    "home.cases.tag": "Use Cases",
+    "home.cases.title": "Intelligent Applications<br /><span class=\"gradient-text\">Across Industries</span>",
+    "home.cases.desc": "AI Agent Teams flexibly adapt to different industry scenarios, delivering immediate and quantifiable benefits.",
+    "home.cases.c1.title": "Intelligent Customer Service",
+    "home.cases.c1.desc": "Multilingual AI support Agents collaborate to instantly resolve customer queries, automatically route tickets, and generate service summaries.",
+    "home.cases.c1.m1": "Response Efficiency",
+    "home.cases.c1.m2": "Labor Cost Reduction",
+    "home.cases.c2.title": "Precision Marketing",
+    "home.cases.c2.desc": "AI Agents automatically analyze market data, generate personalized content, execute A/B tests, and optimize ad strategies in real-time.",
+    "home.cases.c2.m1": "Conversion Rate",
+    "home.cases.c2.m2": "Marketing Cost Savings",
+    "home.cases.c3.title": "Data Analytics",
+    "home.cases.c3.desc": "Multiple analytical Agents collaboratively process massive datasets, automatically generating insight reports, trend forecasts, and risk alerts.",
+    "home.cases.c3.m1": "Analysis Speed",
+    "home.cases.c3.m2": "Report Accuracy",
+
+    // Home - About
+    "home.about.tag": "About Us",
+    "home.about.desc": "ArboNova™ was founded by CEO Tim Kuo, leveraging a background in international finance. We combine financial risk control and governance thinking with the precise execution discipline of a PMP® to implement our core philosophy: the Intelligent Rainforest. We evolve AI from mere assistive tools into executing teams that enterprises can trust and operate long-term.",
+    "home.about.v1.title": "Intelligent Rainforest",
+    "home.about.v1.desc": "Making AI part of the enterprise ecosystem, evolving and collaborating diversely like a living rainforest.",
+    "home.about.v2.title": "Vision",
+    "home.about.v2.desc": "To become the most trusted AI Agent Team solution provider in the Asia-Pacific region.",
+    "home.about.v3.title": "Core Philosophy",
+    "home.about.v3.desc": "<strong>Human-Centric Tech as the Roots</strong><br />Financial-grade risk control × PMP® precision execution × AI multi-agent collaboration.",
+
+    // Home - Contact & Footer
+    "home.contact.title": "Start Creating Your<br /><span class=\"gradient-text\">AI Agent Team</span>",
+    "home.contact.desc": "Leave your information below, and our experts will contact you to arrange a customized demonstration.",
+    "home.contact.form.name": "Your Name *",
+    "home.contact.form.title": "Company Title *",
+    "home.contact.form.company": "Company Name *",
+    "home.contact.form.email": "Work Email *",
+    "home.contact.form.phone": "Contact Number *",
+    "home.contact.form.interest": "Interested Application Scenarios *",
+    "home.contact.form.opt1": "Please Select...",
+    "home.contact.form.opt2": "Jenny (HR/Recruitment Agent)",
+    "home.contact.form.opt3": "Intelligent Customer Service",
+    "home.contact.form.opt4": "Precision Marketing / Lead Generation",
+    "home.contact.form.opt5": "Internal Data Analytics / Process Automation",
+    "home.contact.form.opt6": "Other (Please describe below)",
+    "home.contact.form.message": "Current Pain Points or Goals (Optional)",
+    "home.contact.form.submit": "Submit Request",
+    "home.footer.rights": "© 2024 ArboNova™ Technology. All rights reserved."
   }
 };
 
