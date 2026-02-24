@@ -270,7 +270,7 @@ function initContactForm() {
 function initSplashScreen() {
   const splash = document.getElementById('splash-screen');
   const canvas = document.getElementById('splashCanvas') as HTMLCanvasElement | null;
-  
+
   // If splash screen element doesn't exist, exit.
   if (!splash || !canvas) return;
 
@@ -345,9 +345,9 @@ function initSplashScreen() {
         color: LINE_COLORS[Math.floor(Math.random() * LINE_COLORS.length)],
       }));
     }
-    if (waveCount < maxWaves) setTimeout(spawnWave, 250);
+    if (waveCount < maxWaves) setTimeout(spawnWave, 50);
   }
-  setTimeout(spawnWave, 120);
+  setTimeout(spawnWave, 30);
 
   // Shape drawing
   function drawShape(n: SplashNode) {
@@ -399,7 +399,7 @@ function initSplashScreen() {
   setTimeout(() => {
     if (wordmarkEl) wordmarkEl.style.opacity = '1';
     if (textEl) textEl.style.opacity = '1';
-  }, 1800);
+  }, 300);
 
   // Dismiss at 4.8s
   setTimeout(() => {
@@ -407,8 +407,8 @@ function initSplashScreen() {
     cancelAnimationFrame(animId);
     splash.classList.add('hidden');
     document.body.style.overflow = '';
-    setTimeout(() => splash.remove(), 900);
-  }, 4800);
+    setTimeout(() => splash.remove(), 400);
+  }, 1000);
 }
 
 // ─── Internationalization (i18n) ──────────────────────────────
@@ -452,7 +452,7 @@ const translations: Record<string, Record<string, string>> = {
     "serena.solution.tag": "Solution",
     "serena.solution.title": "Meet Serena: The World's First Multi-Agent AI for Headhunters",
     "serena.solution.desc": "<p>To completely unleash recruiter productivity, ArboNova™ partnered with top industry leaders to develop a Hunter-specific AI Agent — Serena.</p><p style=\"margin-top: 15px;\">Serena features three core capabilities powered by multiple collaborative AI brains:</p><ul style=\"margin: 15px 0 0 0; list-style: none; display: flex; flex-direction: column; gap: 15px;\"><li>🔍 <strong>Deep Analysis:</strong> Dedicated to reading and deeply understanding core JD requirements.</li><li>🎯 <strong>Precision Sourcing:</strong> Accurately scanning and filtering the best-fit resumes from a sea of candidates.</li><li>💬 <strong>Targeted Outreach:</strong> Automatically drafting personalized, high-response outreach emails based on candidate backgrounds.</li></ul>",
-    
+
     "serena.bento.tag": "Building a High-Efficiency Recruitment Engine (HR Efficiency)",
     "serena.bento.title": "Serena's 4 Core Capabilities",
 
@@ -550,19 +550,19 @@ let currentLang = 'zh';
 
 function initI18n() {
   const langSwitchBtns = document.querySelectorAll('.lang-switch');
-  
+
   langSwitchBtns.forEach(btn => {
     btn.addEventListener('click', (e) => {
       e.preventDefault();
-      
+
       // Toggle language
       currentLang = currentLang === 'zh' ? 'en' : 'zh';
-      
+
       // Update button text globally
       langSwitchBtns.forEach(b => {
         b.textContent = currentLang === 'zh' ? 'EN' : '中文';
       });
-      
+
       // Update document content
       document.querySelectorAll('[data-i18n]').forEach((el) => {
         const key = el.getAttribute('data-i18n');
@@ -582,7 +582,7 @@ function initI18n() {
           }
         }
       });
-      
+
       // Re-initialize any dynamic text resizing or interactions if needed
     });
   });
