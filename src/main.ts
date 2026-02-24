@@ -433,6 +433,7 @@ const translations: Record<string, Record<string, string>> = {
     "nav.products": "Products",
 
     // Home - Banner
+    "home.banner.tag": "Solution",
     "home.banner.title": "Let top recruiters focus on \"closing deals,\" and leave the tedious outreach to AI.<br /><span class=\"gradient-text\">Meet Serena</span> — Your 24/7 Multi-Agent Recruitment Ally.",
     "home.banner.btn": "See How Serena Doubles Interview Rates",
 
