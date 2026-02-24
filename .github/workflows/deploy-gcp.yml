@@ -6,7 +6,7 @@ on:
       - main # 當有 commit 推送到 main 分支時觸發
 
 env:
-  PROJECT_ID: 'YOUR_GCP_PROJECT_ID' # TODO: 使用者需將此替換為實際的 GCP Project ID
+  PROJECT_ID: 'valiant-memory-488306-h4' # GCP Project ID
   REGION: 'asia-east1' # 台灣機房 (彰化)
   SERVICE_NAME: 'arbonova-website' # Cloud Run 的服務名稱
 
