@@ -541,7 +541,7 @@ const translations: Record<string, Record<string, string>> = {
     "home.contact.form.opt4": "Process is hard to track",
     "home.contact.form.message": "Current Pain Points or Goals (Optional)",
     "home.contact.form.submit": "Submit Request",
-    "home.footer.rights": "© 2026 ArboNova Co., Ltd. All rights reserved. | Unified Business No.: 60351551"
+    "home.footer.rights": "© 2026 ArboNova Co., Ltd. All rights reserved. | Unified Business No. 60351551"
   }
 };
 

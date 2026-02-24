@@ -1,0 +1,56 @@
+name: Deploy to Cloud Run
+
+on:
+  push:
+    branches:
+      - main # 當有 commit 推送到 main 分支時觸發
+
+env:
+  PROJECT_ID: 'YOUR_GCP_PROJECT_ID' # TODO: 使用者需將此替換為實際的 GCP Project ID
+  REGION: 'asia-east1' # 台灣機房 (彰化)
+  SERVICE_NAME: 'arbonova-website' # Cloud Run 的服務名稱
+
+jobs:
+  deploy:
+    name: Build & Deploy
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: 'read'
+      id-token: 'write'
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      # 登入 Google Cloud (透過 Service Account Key)
+      - id: 'auth'
+        uses: 'google-github-actions/auth@v2'
+        with:
+          credentials_json: '${{ secrets.GCP_CREDENTIALS }}'
+
+      - name: Set up Cloud SDK
+        uses: google-github-actions/setup-gcloud@v2
+
+      # 設定 Docker 可以推送 image 到 GCP 的 Artifact Registry (GCR)
+      - name: Configure Docker for GCP
+        run: gcloud auth configure-docker asia-east1-docker.pkg.dev --quiet
+
+      # Build 並推送 Docker Image 到 Artifact Registry
+      # 注意：請先在 GCP Artifact Registry 中建立一個名為 'cloud-run-source-deploy' 的 Repo (Docker 格式)
+      - name: Build and Push Container
+        run: |-
+          DOCKER_TAG="asia-east1-docker.pkg.dev/$PROJECT_ID/cloud-run-source-deploy/$SERVICE_NAME:${{ github.sha }}"
+          docker build -t $DOCKER_TAG .
+          docker push $DOCKER_TAG
+
+      # 發佈至 Cloud Run
+      - name: Deploy to Cloud Run
+        uses: google-github-actions/deploy-cloudrun@v2
+        with:
+          service: ${{ env.SERVICE_NAME }}
+          region: ${{ env.REGION }}
+          # 使用剛剛 push 的 image
+          image: asia-east1-docker.pkg.dev/${{ env.PROJECT_ID }}/cloud-run-source-deploy/${{ env.SERVICE_NAME }}:${{ github.sha }}
+          # 允許未驗證流量 (對外公開的網站)
+          flags: '--allow-unauthenticated'
