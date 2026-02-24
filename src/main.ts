@@ -540,6 +540,7 @@ const translations: Record<string, Record<string, string>> = {
     "home.contact.form.opt2": "Resume screening is too slow",
     "home.contact.form.opt3": "Low cold email response rate",
     "home.contact.form.opt4": "Process is hard to track",
+    "home.contact.form.opt5": "Other",
     "home.contact.form.message": "Current Pain Points or Goals (Optional)",
     "home.contact.form.submit": "Submit Request",
     "home.footer.rights": "© 2026 ArboNova Co., Ltd. All rights reserved. | Unified Business No. 60351551"
