@@ -23,11 +23,13 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
 
-      # 登入 Google Cloud (透過 Service Account Key)
+      # 登入 Google Cloud (透過 Workload Identity Federation)
       - id: 'auth'
         uses: 'google-github-actions/auth@v2'
         with:
-          credentials_json: '${{ secrets.GCP_CREDENTIALS }}'
+          # TODO: 使用者需將以下兩個值替換為真正的 WIF 以及 Service Account
+          workload_identity_provider: '${{ secrets.GCP_WORKLOAD_IDENTITY_PROVIDER }}'
+          service_account: '${{ secrets.GCP_SERVICE_ACCOUNT }}'
 
       - name: Set up Cloud SDK
         uses: google-github-actions/setup-gcloud@v2
