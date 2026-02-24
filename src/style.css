@@ -969,7 +969,7 @@ textarea {
 .ceo-card {
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-start;
+  align-items: stretch;
   gap: 20px;
   background: var(--card-bg);
   border: var(--brutal-border);
@@ -998,6 +998,8 @@ textarea {
 
 .ceo-info {
   flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .ceo-name {
@@ -1042,6 +1044,7 @@ textarea {
   display: flex;
   flex-direction: column;
   gap: 8px;
+  margin-top: auto;
 }
 
 .ceo-linkedin,
