@@ -415,7 +415,7 @@ function initSplashScreen() {
 const translations: Record<string, Record<string, string>> = {
   en: {
     // Navigation
-    "nav.features": "Features",
+    "nav.features": "Core Capabilities",
     "nav.howItWorks": "How It Works",
     "nav.useCases": "Use Cases",
     "nav.jennyLink": "AI Agent (Jenny)",
@@ -481,8 +481,7 @@ const translations: Record<string, Record<string, string>> = {
     "home.features.f2.desc": "Fully automate repetitive workflows, from data collection and analysis to report generation, drastically reducing labor costs.",
     "home.features.f3.title": "Real-time Learning",
     "home.features.f3.desc": "Agents continuously learn and evolve based on interaction feedback, constantly optimizing decision quality.",
-    "home.features.f4.title": "Security & Compliance",
-    "home.features.f4.desc": "Enterprise-grade security, data encryption, and access control, compliant with ISO 27001 standards to protect your trade secrets.",
+
     // Home - How It Works
     "home.works.tag": "How It Works",
     "home.works.title": "Launch Your AI Team<br /><span class=\"gradient-text\">in 3 Steps</span>",
@@ -542,7 +541,7 @@ const translations: Record<string, Record<string, string>> = {
     "home.contact.form.opt4": "Process is hard to track",
     "home.contact.form.message": "Current Pain Points or Goals (Optional)",
     "home.contact.form.submit": "Submit Request",
-    "home.footer.rights": "© 2024 ArboNova™ Technology. All rights reserved."
+    "home.footer.rights": "© 2026 ArboNova Co., Ltd. All rights reserved. | Unified Business No.: 60351551"
   }
 };
 
