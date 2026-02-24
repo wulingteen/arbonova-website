@@ -967,6 +967,7 @@ textarea {
 /* ─── CEO Card ─────────────────────────────────── */
 .ceo-card {
   display: flex;
+  flex-wrap: wrap;
   align-items: flex-start;
   gap: 20px;
   background: var(--card-bg);
