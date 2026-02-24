@@ -474,7 +474,7 @@ const translations: Record<string, Record<string, string>> = {
     // Home - Use Cases
     "home.features.tag": "Core Capabilities",
     "home.features.title": "Redefining Enterprise Efficiency<br /><span class=\"gradient-text\">with AI Agent Teams</span>",
-    "home.features.desc": "Our AI Agent Team combines multi-agent technology with deep enterprise integration to deliver four core capabilities.",
+    "home.features.desc": "Our AI Agent Team combines multi-agent technology with deep enterprise integration to deliver three core capabilities.",
     "home.features.f1.title": "Intelligent Collaboration",
     "home.features.f1.desc": "Multiple AI Agents perform specialized roles and coordinate like a professional human team to handle complex cross-departmental tasks.",
     "home.features.f2.title": "Workflow Automation",

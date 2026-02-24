@@ -486,6 +486,10 @@ textarea {
   gap: 24px;
 }
 
+.features-grid--3cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
 .feature-card {
   background: var(--card-bg);
   border: var(--brutal-border);
