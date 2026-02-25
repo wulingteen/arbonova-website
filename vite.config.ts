@@ -2,9 +2,9 @@ import { defineConfig } from 'vite'
 import { resolve } from 'path'
 
 export default defineConfig({
-    // Set base to the GitHub repo name for GitHub Pages deployment.
-    // This makes all asset paths relative to /arbonova-website/
-    base: '/arbonova-website/',
+    // Set base to the root path for Cloud Run / Custom Domain deployment.
+    // This makes all asset paths relative to /
+    base: '/',
     build: {
       rollupOptions: {
         input: {
