@@ -1,0 +1,350 @@
+/* jenny.css - Brutalist Apple-inspired product page styles */
+
+/* Root / Reset overrides for product page to use ArboNova's brutalist variables */
+.jenny-page {
+    background-color: var(--bg-primary);
+    /* Off-white instead of dark */
+    color: var(--text-primary);
+    font-family: var(--font-primary);
+    overflow-x: hidden;
+}
+
+/* Adjust navbar to be classic brutalist (no glassmorphism) */
+.jenny-page .navbar {
+    background: var(--bg-primary);
+    border-bottom: var(--brutal-border);
+    box-shadow: 0 4px 0 var(--text-primary);
+}
+
+.jenny-page .nav-link {
+    color: var(--text-primary);
+}
+
+.jenny-page .nav-logo-img {
+    filter: none;
+    /* Revert logo to black */
+}
+
+/* 1. Hero Section */
+.jenny-hero {
+    position: relative;
+    height: 90vh;
+    /* Slightly less than 100vh so user knows there's more */
+    min-height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--bg-primary);
+    border-bottom: var(--brutal-border);
+    padding: 0 20px;
+    overflow: hidden;
+}
+
+/* Add a brutalist background pattern instead of a soft glow */
+.jenny-hero .hero-bg-glow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: radial-gradient(var(--text-primary) 1px, transparent 1px);
+    background-size: 30px 30px;
+    opacity: 0.05;
+    z-index: 0;
+}
+
+.jenny-hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 900px;
+    background: var(--bg-secondary);
+    border: var(--brutal-border);
+    border-radius: var(--radius-lg);
+    padding: 80px 40px;
+    box-shadow: 12px 12px 0 var(--text-primary);
+}
+
+.jenny-hero-eyebrow {
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: var(--text-secondary);
+    letter-spacing: 0.1em;
+    margin-bottom: 1.5rem;
+    background: var(--bg-primary);
+    border: var(--brutal-border);
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 999px;
+    box-shadow: 2px 2px 0 var(--text-primary);
+}
+
+.jenny-hero-title {
+    font-size: clamp(4rem, 10vw, 8rem);
+    font-weight: 900;
+    line-height: 1.05;
+    letter-spacing: -0.04em;
+    margin-bottom: 1rem;
+    color: var(--accent-primary);
+    /* Use brand green instead of soft gradient */
+    text-shadow: 4px 4px 0 var(--text-primary);
+}
+
+.jenny-hero-subtitle {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-weight: 700;
+    color: var(--text-primary);
+    line-height: 1.3;
+    margin-bottom: 3rem;
+    letter-spacing: -0.02em;
+}
+
+.jenny-hero-cta {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Overriding the Apple-style buttons with Brutalist ones */
+.jenny-btn-primary {
+    background-color: var(--brand-blue);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 800;
+    padding: 16px 32px;
+    border: var(--brutal-border);
+    box-shadow: 6px 6px 0 var(--text-primary);
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.jenny-btn-primary:active {
+    transform: translate(4px, 4px);
+    box-shadow: 2px 2px 0 var(--text-primary);
+}
+
+.jenny-btn-secondary {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-size: 1.2rem;
+    font-weight: 800;
+    padding: 16px 32px;
+    border: var(--brutal-border);
+    box-shadow: 4px 4px 0 var(--text-primary);
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.jenny-btn-secondary:active {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0 var(--text-primary);
+}
+
+/* 2. Statement Section (The Problem) */
+.jenny-statement {
+    background-color: var(--accent-secondary);
+    /* Purple */
+    color: white;
+    padding: 140px 20px;
+    text-align: center;
+    border-bottom: var(--brutal-border);
+}
+
+.jenny-statement-text {
+    max-width: 980px;
+    margin: 0 auto;
+    font-size: clamp(2rem, 5vw, 4rem);
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    text-shadow: 2px 2px 0 var(--text-primary);
+}
+
+.jenny-statement-text span {
+    color: var(--bg-secondary);
+    text-shadow: none;
+}
+
+/* 3. Bento Grid Section (Features) */
+.jenny-bento-section {
+    background-color: var(--bg-secondary);
+    padding: 120px 20px;
+    border-bottom: var(--brutal-border);
+}
+
+.jenny-bento-header {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.jenny-bento-header h2 {
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.jenny-bento-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.bento-card {
+    background-color: var(--bg-primary);
+    border: var(--brutal-border);
+    border-radius: var(--radius-md);
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 8px 8px 0 var(--text-primary);
+    transition: transform 0.2s;
+}
+
+.bento-card:hover {
+    transform: translate(-4px, -4px);
+    box-shadow: 12px 12px 0 var(--text-primary);
+}
+
+.bento-large {
+    grid-column: span 2;
+    min-height: 500px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Color thematic bento backgrounds based on homepage */
+.bento-green {
+    background-color: var(--accent-primary);
+}
+
+.bento-gold {
+    background-color: var(--accent-gold);
+}
+
+.bento-purple {
+    background-color: var(--text-secondary);
+    color: white;
+}
+
+.bento-purple .bento-desc {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.bento-content {
+    position: relative;
+    z-index: 2;
+    max-width: 450px;
+}
+
+.bento-large .bento-content {
+    max-width: 500px;
+}
+
+.bento-visual {
+    position: absolute;
+    right: -50px;
+    bottom: -50px;
+    font-size: 300px;
+    opacity: 0.9;
+    z-index: 1;
+}
+
+.bento-icon {
+    font-size: 40px;
+    margin-bottom: 24px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    background: white;
+    border: var(--brutal-border);
+    border-radius: 50%;
+    box-shadow: 4px 4px 0 var(--text-primary);
+    color: var(--text-primary);
+}
+
+.bento-title {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 16px;
+    line-height: 1.2;
+}
+
+.bento-desc {
+    font-size: 1.1rem;
+    color: var(--text-primary);
+    line-height: 1.6;
+    font-weight: 600;
+}
+
+/* Make it responsive */
+@media (max-width: 860px) {
+    .jenny-hero-content {
+        padding: 40px 20px;
+    }
+
+    .jenny-bento-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .bento-large {
+        grid-column: span 1;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .bento-visual {
+        right: -20px;
+        bottom: -20px;
+        font-size: 180px;
+    }
+}
+
+/* 4. Contact Section Overrides */
+.jenny-page .contact {
+    background-color: var(--bg-primary);
+    /* Revert */
+    border-top: none;
+}
+
+.jenny-page .contact-form-wrapper {
+    background-color: white;
+    border: var(--brutal-border);
+    box-shadow: 6px 6px 0 var(--text-primary);
+    border-radius: var(--radius-lg);
+}
+
+.jenny-page .form-group input,
+.jenny-page .form-group textarea,
+.jenny-page .form-group select {
+    background-color: var(--bg-primary);
+    border: var(--brutal-border);
+    color: var(--text-primary);
+}
+
+.jenny-page .form-group input:focus,
+.jenny-page .form-group textarea:focus,
+.jenny-page .form-group select:focus {
+    border-color: var(--text-primary);
+    background: white;
+}
+
+
+/* Removing brutalist traits from footer for this page */
+.jenny-page .footer {
+    background-color: var(--bg-primary);
+    /* Revert */
+}
+
+.jenny-page .footer-logo-img {
+    filter: none;
+}
