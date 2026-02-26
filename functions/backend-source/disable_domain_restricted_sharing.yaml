@@ -1,0 +1,4 @@
+name: projects/valiant-memory-488306-h4/policies/iam.allowedPolicyMemberDomains
+spec:
+  rules:
+  - allowAll: true
